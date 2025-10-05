@@ -114,3 +114,8 @@ After updating replicas to 2 and image to `nginx:latest`, FluxCD automatically r
 
 ![alt text](Screenshots/rep2.png)
 ![alt text](Screenshots/app2.png)
+
+## Future Enhancements
+- Integrate with CI/CD pipelines for automated testing.
+- Add monitoring and alerting for deployments.
+- Explore advanced FluxCD features like image automation and notifications.
