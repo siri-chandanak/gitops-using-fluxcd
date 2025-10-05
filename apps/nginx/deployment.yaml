@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: siri019/simple-html-login-page:v1.1
         ports:
         - containerPort: 80
