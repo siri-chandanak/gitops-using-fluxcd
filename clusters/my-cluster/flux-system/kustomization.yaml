@@ -1,22 +1,13 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: nginx-app
-  namespace: flux-system        # Kustomizations are tracked in flux-system
+  namespace: flux-system
 spec:
-  # How often Flux reconciles this Kustomization
   interval: 1m
-
-  # Path to the folder containing your app manifests, relative to repo root
   path: "./apps/nginx"
-
-  # The Git repository source this Kustomization pulls from
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-
-  # Clean up resources that are removed from Git
-  prune: true
-
-  # Apply all resources in order
-  validation: client
+  targetNamespace: default
