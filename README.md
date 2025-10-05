@@ -106,8 +106,11 @@ This repository demonstrates a GitOps-based continuous deployment setup using Fl
 
 ## Demo
 
-Initially, rplicas were set to 2 and image to `siri019/simple-html-login-page:v1.1`.
+Initially, replicas were set to 4 and image to `siri019/simple-html-login-page:v1.1`.
 ![alt text](Screenshots/rep1.png)
 ![alt text](Screenshots/app1.png)
+    
+After updating replicas to 2 and image to `nginx:latest`, FluxCD automatically reconciled the changes.
 
-After updating replicas to 4 and image to `nginx:latest`, FluxCD automatically reconciled the changes.
+![alt text](Screenshots/rep2.png)
+![alt text](Screenshots/app2.png)
