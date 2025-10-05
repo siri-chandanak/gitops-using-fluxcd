@@ -19,8 +19,8 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 10m0s
-  path: ./clusters/my-cluster
+  interval: 1m0s
+  path: /apps/nginx
   prune: true
   sourceRef:
     kind: GitRepository
